@@ -9,8 +9,8 @@ namespace SwitchGiftDataManager.WinForm
         private BCATManager Package;
         private Games Game;
 
-        public SaveWindow(BCATManager bcat, Games game) 
-        { 
+        public SaveWindow(BCATManager bcat, Games game)
+        {
             InitializeComponent();
 
             Package = bcat;
@@ -29,7 +29,7 @@ namespace SwitchGiftDataManager.WinForm
 
         private void BtnSrcBrowse_Click(object sender, EventArgs e)
         {
-            if(FolderBrowser.ShowDialog() == DialogResult.OK)
+            if (FolderBrowser.ShowDialog() == DialogResult.OK)
             {
                 TxtSourcePath.Text = FolderBrowser.SelectedPath;
                 TxtDestPath.Text = Path.GetDirectoryName(FolderBrowser.SelectedPath);
@@ -44,7 +44,7 @@ namespace SwitchGiftDataManager.WinForm
 
         private void BtnSave_Click(object sender, EventArgs e)
         {
-            if(!RadioUnique.Checked && !RadioMultiple.Checked)
+            if (!RadioUnique.Checked && !RadioMultiple.Checked)
             {
                 MessageBox.Show("Select a Build Method.");
                 return;
@@ -141,7 +141,7 @@ namespace SwitchGiftDataManager.WinForm
 
         private static bool CheckValidPath(string path)
         {
-            if(string.IsNullOrWhiteSpace(path))
+            if (string.IsNullOrWhiteSpace(path))
                 return false;
 
             if (!Directory.Exists(path))
@@ -159,7 +159,7 @@ namespace SwitchGiftDataManager.WinForm
             foreach (FileInfo file in dir.GetFiles())
             {
                 string targetFilePath = Path.Combine(dest, file.Name);
-                if(!File.Exists(targetFilePath))
+                if (!File.Exists(targetFilePath))
                     file.CopyTo(targetFilePath);
             }
 

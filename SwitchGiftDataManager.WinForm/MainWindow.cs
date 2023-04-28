@@ -8,11 +8,11 @@ namespace SwitchGiftDataManager.WinForm
     public partial class MainWindow : Form
     {
         private Games CurrentGame = Games.None;
-        private BCATManager PackageLGPE = new (Games.LGPE);
-        private BCATManager PackageSWSH = new (Games.SWSH);
-        private BCATManager PackageBDSP = new (Games.BDSP);
-        private BCATManager PackagePLA = new (Games.PLA);
-        private BCATManager PackageSCVI = new (Games.SCVI);
+        private BCATManager PackageLGPE = new(Games.LGPE);
+        private BCATManager PackageSWSH = new(Games.SWSH);
+        private BCATManager PackageBDSP = new(Games.BDSP);
+        private BCATManager PackagePLA = new(Games.PLA);
+        private BCATManager PackageSCVI = new(Games.SCVI);
         private List<ushort> Duplicated = new List<ushort>();
 
         public MainWindow()
@@ -194,7 +194,7 @@ namespace SwitchGiftDataManager.WinForm
         private void BtnApply_Click(object sender, EventArgs e)
         {
             var proceed = true;
-            if(CurrentGame is Games.SCVI)
+            if (CurrentGame is Games.SCVI)
             {
                 var warning = "WARNING\n\n" +
                     "WCID editings in SV wondercards might impact the entity's TID and SID, resulting in an illegal Pokémon.\n" +
@@ -261,7 +261,7 @@ namespace SwitchGiftDataManager.WinForm
 
         void FileDragEnter(object sender, DragEventArgs e)
         {
-            if(e.Data is not null && CurrentGame is not Games.None)
+            if (e.Data is not null && CurrentGame is not Games.None)
                 if (e.Data.GetDataPresent(DataFormats.FileDrop))
                     e.Effect = DragDropEffects.Copy;
         }
@@ -380,7 +380,7 @@ namespace SwitchGiftDataManager.WinForm
                 var handled = false;
                 if ((CurrentGame is Games.BDSP && wcid >= 2048) || (CurrentGame is Games.SWSH && e.Index >= 129))
                 {
-                    if(!curr.Contains('\u2757'))
+                    if (!curr.Contains('\u2757'))
                         ((ListBox)sender).Items[e.Index] = $"{curr} \u2757";
                     g.FillRectangle(new SolidBrush(Color.IndianRed), e.Bounds);
                     g.DrawString(((ListBox)sender).Items[e.Index].ToString(), e.Font!, new SolidBrush(e.ForeColor), new PointF(e.Bounds.X, e.Bounds.Y));
@@ -397,7 +397,7 @@ namespace SwitchGiftDataManager.WinForm
                         handled = true;
                     }
                 }
-                if(!handled)
+                if (!handled)
                     g.DrawString(curr, e.Font!, new SolidBrush(e.ForeColor), new PointF(e.Bounds.X, e.Bounds.Y));
             }
         }
