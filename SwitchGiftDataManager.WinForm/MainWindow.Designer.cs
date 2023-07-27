@@ -150,7 +150,7 @@ partial class MainWindow
         ListBoxWC.Name = "ListBoxWC";
         ListBoxWC.Size = new Size(214, 304);
         ListBoxWC.TabIndex = 5;
-        ToolTipWcid.SetToolTip(ListBoxWC, "                        Wondercards with duplicated WC ID will not be seen by the game.                        ");
+        ToolTipWcid.SetToolTip(ListBoxWC, "                        带有重复WC ID的神秘礼物卡片将不会被游戏看到。                        ");
         ListBoxWC.DrawItem += ListBoxWC_DrawItem;
         ListBoxWC.SelectedIndexChanged += ListBoxWC_SelectedIndexChanged;
         ListBoxWC.DragDrop += FileDragDrop;
@@ -163,7 +163,7 @@ partial class MainWindow
         BtnOpen.Name = "BtnOpen";
         BtnOpen.Size = new Size(214, 29);
         BtnOpen.TabIndex = 6;
-        BtnOpen.Text = "打开神奇卡片文件...";
+        BtnOpen.Text = "打开神秘礼物卡片文件...";
         BtnOpen.UseVisualStyleBackColor = true;
         BtnOpen.Click += BtnOpen_Click;
         // 
@@ -242,7 +242,7 @@ partial class MainWindow
         LblInfo7.Name = "LblInfo7";
         LblInfo7.Size = new Size(49, 20);
         LblInfo7.TabIndex = 6;
-        LblInfo7.Text = "Info_7";
+        LblInfo7.Text = "信息_7";
         LblInfo7.Visible = false;
         LblInfo7.SizeChanged += LblInfo_SizeChanged;
         // 
@@ -253,7 +253,7 @@ partial class MainWindow
         LblInfo6.Name = "LblInfo6";
         LblInfo6.Size = new Size(49, 20);
         LblInfo6.TabIndex = 5;
-        LblInfo6.Text = "Info_6";
+        LblInfo6.Text = "信息_6";
         LblInfo6.Visible = false;
         LblInfo6.SizeChanged += LblInfo_SizeChanged;
         // 
@@ -264,7 +264,7 @@ partial class MainWindow
         LblInfo5.Name = "LblInfo5";
         LblInfo5.Size = new Size(49, 20);
         LblInfo5.TabIndex = 4;
-        LblInfo5.Text = "Info_5";
+        LblInfo5.Text = "信息_5";
         LblInfo5.Visible = false;
         LblInfo5.SizeChanged += LblInfo_SizeChanged;
         // 
@@ -275,7 +275,7 @@ partial class MainWindow
         LblInfo4.Name = "LblInfo4";
         LblInfo4.Size = new Size(49, 20);
         LblInfo4.TabIndex = 3;
-        LblInfo4.Text = "Info_4";
+        LblInfo4.Text = "信息_4";
         LblInfo4.Visible = false;
         LblInfo4.SizeChanged += LblInfo_SizeChanged;
         // 
@@ -286,7 +286,7 @@ partial class MainWindow
         LblInfo3.Name = "LblInfo3";
         LblInfo3.Size = new Size(49, 20);
         LblInfo3.TabIndex = 2;
-        LblInfo3.Text = "Info_3";
+        LblInfo3.Text = "信息_3";
         LblInfo3.Visible = false;
         LblInfo3.SizeChanged += LblInfo_SizeChanged;
         // 
@@ -297,7 +297,7 @@ partial class MainWindow
         LblInfo2.Name = "LblInfo2";
         LblInfo2.Size = new Size(49, 20);
         LblInfo2.TabIndex = 1;
-        LblInfo2.Text = "Info_2";
+        LblInfo2.Text = "信息_2";
         LblInfo2.Visible = false;
         LblInfo2.SizeChanged += LblInfo_SizeChanged;
         // 
@@ -308,7 +308,7 @@ partial class MainWindow
         LblInfo1.Name = "LblInfo1";
         LblInfo1.Size = new Size(49, 20);
         LblInfo1.TabIndex = 0;
-        LblInfo1.Text = "Info_1";
+        LblInfo1.Text = "信息_1";
         LblInfo1.Visible = false;
         LblInfo1.SizeChanged += LblInfo_SizeChanged;
         // 
@@ -412,7 +412,7 @@ partial class MainWindow
         MaximizeBox = false;
         MinimizeBox = false;
         Name = "MainWindow";
-        Text = "Switch礼物数据管理器 v";
+        Text = "Switch神秘礼物数据管理器 v";
         DragDrop += FileDragDrop;
         DragEnter += FileDragEnter;
         GrpBCAT.ResumeLayout(false);
