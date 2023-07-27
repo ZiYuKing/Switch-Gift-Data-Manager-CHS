@@ -76,7 +76,7 @@ partial class MainWindow
         BtnLGPE.Size = new Size(136, 60);
         BtnLGPE.TabIndex = 0;
         BtnLGPE.TabStop = false;
-        BtnLGPE.Text = "LGPE";
+        BtnLGPE.Text = "Let's Go! \n皮卡丘/伊布";
         BtnLGPE.UseVisualStyleBackColor = true;
         BtnLGPE.Click += BtnLGPE_Click;
         // 
@@ -91,7 +91,7 @@ partial class MainWindow
         BtnSWSH.Size = new Size(136, 60);
         BtnSWSH.TabIndex = 1;
         BtnSWSH.TabStop = false;
-        BtnSWSH.Text = "SWSH";
+        BtnSWSH.Text = "剑／盾";
         BtnSWSH.UseVisualStyleBackColor = true;
         BtnSWSH.Click += BtnSWSH_Click;
         // 
@@ -106,7 +106,7 @@ partial class MainWindow
         BtnBDSP.Size = new Size(136, 60);
         BtnBDSP.TabIndex = 2;
         BtnBDSP.TabStop = false;
-        BtnBDSP.Text = "BDSP";
+        BtnBDSP.Text = "晶灿钻石／明亮珍珠";
         BtnBDSP.UseVisualStyleBackColor = true;
         BtnBDSP.Click += BtnBDSP_Click;
         // 
@@ -121,7 +121,7 @@ partial class MainWindow
         BtnSCVI.Size = new Size(136, 60);
         BtnSCVI.TabIndex = 3;
         BtnSCVI.TabStop = false;
-        BtnSCVI.Text = "SCVI";
+        BtnSCVI.Text = "朱／紫";
         BtnSCVI.UseVisualStyleBackColor = true;
         BtnSCVI.Click += BtnSCVI_Click;
         // 
@@ -136,7 +136,7 @@ partial class MainWindow
         BtnPLA.Size = new Size(136, 60);
         BtnPLA.TabIndex = 4;
         BtnPLA.TabStop = false;
-        BtnPLA.Text = "PLA";
+        BtnPLA.Text = "传说 阿尔宙斯";
         BtnPLA.UseVisualStyleBackColor = true;
         BtnPLA.Click += BtnPLA_Click;
         // 
@@ -163,7 +163,7 @@ partial class MainWindow
         BtnOpen.Name = "BtnOpen";
         BtnOpen.Size = new Size(214, 29);
         BtnOpen.TabIndex = 6;
-        BtnOpen.Text = "Open Wondercard Files...";
+        BtnOpen.Text = "打开神奇卡片文件...";
         BtnOpen.UseVisualStyleBackColor = true;
         BtnOpen.Click += BtnOpen_Click;
         // 
@@ -174,7 +174,7 @@ partial class MainWindow
         BtnSave.Name = "BtnSave";
         BtnSave.Size = new Size(214, 29);
         BtnSave.TabIndex = 7;
-        BtnSave.Text = "Save as BCAT Package...";
+        BtnSave.Text = "保存为BCAT...";
         BtnSave.UseVisualStyleBackColor = true;
         BtnSave.Click += BtnSave_Click;
         // 
@@ -194,7 +194,7 @@ partial class MainWindow
         GrpBCAT.Size = new Size(704, 409);
         GrpBCAT.TabIndex = 8;
         GrpBCAT.TabStop = false;
-        GrpBCAT.Text = "BCAT Manager";
+        GrpBCAT.Text = "BCAT管理器";
         // 
         // ChkRepeatable
         // 
@@ -203,7 +203,7 @@ partial class MainWindow
         ChkRepeatable.Name = "ChkRepeatable";
         ChkRepeatable.Size = new Size(121, 24);
         ChkRepeatable.TabIndex = 12;
-        ChkRepeatable.Text = "Is Repeatable";
+        ChkRepeatable.Text = "可重复的";
         ChkRepeatable.UseVisualStyleBackColor = true;
         ChkRepeatable.CheckedChanged += ChkRepeatable_CheckedChanged;
         // 
@@ -214,7 +214,7 @@ partial class MainWindow
         BtnApply.Name = "BtnApply";
         BtnApply.Size = new Size(97, 32);
         BtnApply.TabIndex = 11;
-        BtnApply.Text = "Apply";
+        BtnApply.Text = "应用";
         BtnApply.UseVisualStyleBackColor = true;
         BtnApply.Click += BtnApply_Click;
         // 
@@ -233,7 +233,7 @@ partial class MainWindow
         GrpContent.Size = new Size(358, 263);
         GrpContent.TabIndex = 10;
         GrpContent.TabStop = false;
-        GrpContent.Text = "Gift Content";
+        GrpContent.Text = "礼物内容";
         // 
         // LblInfo7
         // 
@@ -339,20 +339,20 @@ partial class MainWindow
         ContextMenuStripWC.Items.AddRange(new ToolStripItem[] { BtnRemove, BtnRemoveAll });
         ContextMenuStripWC.Name = "ConextMenuStripWC";
         ContextMenuStripWC.Size = new Size(155, 52);
-        ContextMenuStripWC.Text = "Remove";
+        ContextMenuStripWC.Text = "删除";
         // 
         // BtnRemove
         // 
         BtnRemove.Name = "BtnRemove";
         BtnRemove.Size = new Size(154, 24);
-        BtnRemove.Text = "Remove";
+        BtnRemove.Text = "删除";
         BtnRemove.Click += BtnRemove_Click;
         // 
         // BtnRemoveAll
         // 
         BtnRemoveAll.Name = "BtnRemoveAll";
         BtnRemoveAll.Size = new Size(154, 24);
-        BtnRemoveAll.Text = "Remove All";
+        BtnRemoveAll.Text = "删除所有";
         BtnRemoveAll.Click += BtnRemoveAll_Click;
         // 
         // OpenFileDialogWC
@@ -385,13 +385,13 @@ partial class MainWindow
         ToolsToolStripMenu.DropDownItems.AddRange(new ToolStripItem[] { MenuItemMGDB });
         ToolsToolStripMenu.Name = "ToolsToolStripMenu";
         ToolsToolStripMenu.Size = new Size(58, 24);
-        ToolsToolStripMenu.Text = "Tools";
+        ToolsToolStripMenu.Text = "工具";
         // 
         // MenuItemMGDB
         // 
         MenuItemMGDB.Name = "MenuItemMGDB";
         MenuItemMGDB.Size = new Size(351, 26);
-        MenuItemMGDB.Text = "Download latest Mystery Gift Database";
+        MenuItemMGDB.Text = "下载最新的神秘礼物数据库";
         MenuItemMGDB.Click += MenuItemMGDB_Click;
         // 
         // MainWindow
@@ -412,7 +412,7 @@ partial class MainWindow
         MaximizeBox = false;
         MinimizeBox = false;
         Name = "MainWindow";
-        Text = "Switch Gift Data Manager v";
+        Text = "Switch礼物数据管理器 v";
         DragDrop += FileDragDrop;
         DragEnter += FileDragEnter;
         GrpBCAT.ResumeLayout(false);

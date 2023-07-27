@@ -838,7 +838,7 @@ namespace SwitchGiftDataManager.Core.Properties {
         /// </summary>
         internal static string SCVIClothings {
             get {
-                return ResourceManager.GetString("SCVIClothings", resourceCulture);
+                return ResourceManager.GetString("朱紫服装", resourceCulture);
             }
         }
         

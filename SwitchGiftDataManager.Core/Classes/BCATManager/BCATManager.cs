@@ -352,11 +352,11 @@ public class BCATManager
     {
         return type switch
         {
-            ShinyType.ShinyLocked => "Shiny Locked",
-            ShinyType.ShinyPossible => "Shiny Standard Odds",
-            ShinyType.ShinyHighOdds => "Shiny High Odds",
-            ShinyType.ShinyForced => "Shiny Forced",
-            ShinyType.ShinyTIDAbuse => "Shiny Possible (TID Abuse)",
+            ShinyType.ShinyLocked => "闪亮锁定",
+            ShinyType.ShinyPossible => "闪光概率正常",
+            ShinyType.ShinyHighOdds => "闪光概率高",
+            ShinyType.ShinyForced => "强制闪光",
+            ShinyType.ShinyTIDAbuse => "可能闪光(TID滥用)",
             _ => throw new IndexOutOfRangeException()
         };
     }
@@ -365,8 +365,8 @@ public class BCATManager
     {
         return type switch
         {
-            PIDType.FixedPID => "Fixed PID",
-            PIDType.RandomPID => "Random PID",
+            PIDType.FixedPID => "固定PID",
+            PIDType.RandomPID => "随机PID",
             _ => throw new IndexOutOfRangeException()
         };
     }

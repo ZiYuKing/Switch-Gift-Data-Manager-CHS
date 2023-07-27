@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <_LastSelectedProfileId>C:\Users\King\Desktop\常用文件\GitHub\GitHub\Switch-Gift-Data-Manager-CHS\SwitchGiftDataManager.WinForm\Properties\PublishProfiles\windows.pubxml</_LastSelectedProfileId>
+    <_LastSelectedProfileId>C:\Users\King\Desktop\常用文件\GitHub\Switch-Gift-Data-Manager-CHS\SwitchGiftDataManager.WinForm\Properties\PublishProfiles\windows.pubxml</_LastSelectedProfileId>
   </PropertyGroup>
   <ItemGroup>
     <Compile Update="MainWindow.cs">
