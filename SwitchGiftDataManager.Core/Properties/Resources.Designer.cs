@@ -836,9 +836,9 @@ namespace SwitchGiftDataManager.Core.Properties {
         ///
         /// [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string SCVIClothingBags {
+        internal static string SCVIClothings {
             get {
-                return ResourceManager.GetString("SCVIClothingBags", resourceCulture);
+                return ResourceManager.GetString("SCVIClothings", resourceCulture);
             }
         }
         
