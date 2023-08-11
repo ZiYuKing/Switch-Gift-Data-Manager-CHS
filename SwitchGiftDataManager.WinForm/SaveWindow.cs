@@ -69,15 +69,15 @@ public partial class SaveWindow : Form
             {
                 var wcdata = Package.ConcatenateFiles();
                 var metadata = Package.ForgeMetaInfo(wcdata.ToArray());
-                var metadatapath = Path.Combine(path, "目录");
+                var metadatapath = Path.Combine(path, "directories");
                 metadatapath = Path.Combine(metadatapath, Package.GetDefaultBcatFolderName());
-                var wcpath = Path.Combine(metadatapath, "文件");
+                var wcpath = Path.Combine(metadatapath, "files");
 
                 if (Directory.Exists(metadatapath))
                     DeleteFilesAndDirectory(metadatapath);
 
                 Directory.CreateDirectory(wcpath);
-                File.WriteAllBytes(Path.Combine(metadatapath, "源文件"), metadata.ToArray());
+                File.WriteAllBytes(Path.Combine(metadatapath, "files.meta"), metadata.ToArray());
                 File.WriteAllBytes(Path.Combine(wcpath, Package.GetDefaultBcatFileName()), wcdata.ToArray());
                 MessageBox.Show($"Saved in {path}{Environment.NewLine}BCAT forge was successful.");
                 this.Close();
@@ -93,13 +93,13 @@ public partial class SaveWindow : Form
             var metadata = Package.ForgeMetaInfo();
             var metadatapath = Path.Combine(path, "directories");
             metadatapath = Path.Combine(metadatapath, Package.GetDefaultBcatFolderName());
-            var wcspath = Path.Combine(metadatapath, "文件");
+            var wcspath = Path.Combine(metadatapath, "files");
 
             if (Directory.Exists(metadatapath))
                 DeleteFilesAndDirectory(metadatapath);
 
             Directory.CreateDirectory(wcspath);
-            File.WriteAllBytes(Path.Combine(metadatapath, "源文件"), metadata.ToArray());
+            File.WriteAllBytes(Path.Combine(metadatapath, "files.meta"), metadata.ToArray());
             if (Package.TrySaveAllWondercards(wcspath))
             {
                 MessageBox.Show($"保存于{path}{Environment.NewLine}BCAT保存信息成功.");
