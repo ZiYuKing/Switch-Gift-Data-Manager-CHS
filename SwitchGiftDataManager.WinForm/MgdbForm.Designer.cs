@@ -35,17 +35,17 @@
             // lblMessage
             // 
             lblMessage.AutoSize = true;
-            lblMessage.Location = new Point(94, 9);
+            lblMessage.Location = new Point(110, 8);
             lblMessage.Name = "lblMessage";
-            lblMessage.Size = new Size(190, 20);
+            lblMessage.Size = new Size(108, 17);
             lblMessage.TabIndex = 0;
-            lblMessage.Text = "Downloading, please wait...";
+            lblMessage.Text = "正在下载, 请稍候...";
             // 
             // MgdbForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(392, 37);
+            ClientSize = new Size(343, 34);
             ControlBox = false;
             Controls.Add(lblMessage);
             Icon = (Icon)resources.GetObject("$this.Icon");
@@ -54,7 +54,7 @@
             Name = "MgdbForm";
             ShowInTaskbar = false;
             StartPosition = FormStartPosition.Manual;
-            Text = "Mystery Gift Database";
+            Text = "神秘礼物数据库";
             ResumeLayout(false);
             PerformLayout();
         }

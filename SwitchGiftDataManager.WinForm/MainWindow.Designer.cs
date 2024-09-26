@@ -79,7 +79,7 @@ partial class MainWindow
         BtnLGPE.Size = new Size(136, 60);
         BtnLGPE.TabIndex = 0;
         BtnLGPE.TabStop = false;
-        BtnLGPE.Text = "LGPE";
+        BtnLGPE.Text = "Let's Go! \n皮卡丘/伊布";
         BtnLGPE.UseVisualStyleBackColor = true;
         BtnLGPE.Click += BtnLGPE_Click;
         // 
@@ -94,7 +94,7 @@ partial class MainWindow
         BtnSWSH.Size = new Size(136, 60);
         BtnSWSH.TabIndex = 1;
         BtnSWSH.TabStop = false;
-        BtnSWSH.Text = "SWSH";
+        BtnSWSH.Text = "剑／盾";
         BtnSWSH.UseVisualStyleBackColor = true;
         BtnSWSH.Click += BtnSWSH_Click;
         // 
@@ -109,7 +109,7 @@ partial class MainWindow
         BtnBDSP.Size = new Size(136, 60);
         BtnBDSP.TabIndex = 2;
         BtnBDSP.TabStop = false;
-        BtnBDSP.Text = "BDSP";
+        BtnBDSP.Text = "晶灿钻石／明亮珍珠";
         BtnBDSP.UseVisualStyleBackColor = true;
         BtnBDSP.Click += BtnBDSP_Click;
         // 
@@ -124,7 +124,7 @@ partial class MainWindow
         BtnSCVI.Size = new Size(136, 60);
         BtnSCVI.TabIndex = 3;
         BtnSCVI.TabStop = false;
-        BtnSCVI.Text = "SCVI";
+        BtnSCVI.Text = "朱／紫";
         BtnSCVI.UseVisualStyleBackColor = true;
         BtnSCVI.Click += BtnSCVI_Click;
         // 
@@ -139,7 +139,7 @@ partial class MainWindow
         BtnPLA.Size = new Size(136, 60);
         BtnPLA.TabIndex = 4;
         BtnPLA.TabStop = false;
-        BtnPLA.Text = "PLA";
+        BtnPLA.Text = "传说 阿尔宙斯";
         BtnPLA.UseVisualStyleBackColor = true;
         BtnPLA.Click += BtnPLA_Click;
         // 
@@ -153,7 +153,7 @@ partial class MainWindow
         ListBoxWC.Name = "ListBoxWC";
         ListBoxWC.Size = new Size(214, 304);
         ListBoxWC.TabIndex = 5;
-        ToolTipWcid.SetToolTip(ListBoxWC, "                        Wondercards with duplicated WC ID will not be seen by the game.                        ");
+        ToolTipWcid.SetToolTip(ListBoxWC, "                        带有重复WCID的神秘礼物卡片将不会被游戏看到。                        ");
         ListBoxWC.DrawItem += ListBoxWC_DrawItem;
         ListBoxWC.SelectedIndexChanged += ListBoxWC_SelectedIndexChanged;
         ListBoxWC.DragDrop += FileDragDrop;
@@ -166,7 +166,7 @@ partial class MainWindow
         BtnOpen.Name = "BtnOpen";
         BtnOpen.Size = new Size(214, 29);
         BtnOpen.TabIndex = 6;
-        BtnOpen.Text = "Open Wondercard Files...";
+        BtnOpen.Text = "打开神秘礼物卡片文件...";
         BtnOpen.UseVisualStyleBackColor = true;
         BtnOpen.Click += BtnOpen_Click;
         // 
@@ -177,7 +177,7 @@ partial class MainWindow
         BtnSave.Name = "BtnSave";
         BtnSave.Size = new Size(214, 29);
         BtnSave.TabIndex = 7;
-        BtnSave.Text = "Save as BCAT Package...";
+        BtnSave.Text = "保存为BCAT...";
         BtnSave.UseVisualStyleBackColor = true;
         BtnSave.Click += BtnSave_Click;
         // 
@@ -199,13 +199,13 @@ partial class MainWindow
         GrpBCAT.Size = new Size(704, 409);
         GrpBCAT.TabIndex = 8;
         GrpBCAT.TabStop = false;
-        GrpBCAT.Text = "BCAT Manager";
+        GrpBCAT.Text = "BCAT管理器";
         // 
         // cmbRedemptionMethod
         // 
         cmbRedemptionMethod.Enabled = false;
         cmbRedemptionMethod.FormattingEnabled = true;
-        cmbRedemptionMethod.Items.AddRange(new object[] { "Before v2.0.1", "After v2.0.1" });
+        cmbRedemptionMethod.Items.AddRange(new object[] { "v2.0.1之前的版本 ", "v2.0.1之后的版本" });
         cmbRedemptionMethod.Location = new Point(501, 32);
         cmbRedemptionMethod.Name = "cmbRedemptionMethod";
         cmbRedemptionMethod.Size = new Size(121, 28);
@@ -220,7 +220,7 @@ partial class MainWindow
         ChkRepeatable.Name = "ChkRepeatable";
         ChkRepeatable.Size = new Size(121, 24);
         ChkRepeatable.TabIndex = 12;
-        ChkRepeatable.Text = "Is Repeatable";
+        ChkRepeatable.Text = "可重复的";
         ChkRepeatable.UseVisualStyleBackColor = true;
         ChkRepeatable.CheckedChanged += ChkRepeatable_CheckedChanged;
         // 
@@ -242,7 +242,7 @@ partial class MainWindow
         BtnApply.Name = "BtnApply";
         BtnApply.Size = new Size(97, 32);
         BtnApply.TabIndex = 11;
-        BtnApply.Text = "Apply";
+        BtnApply.Text = "应用";
         BtnApply.UseVisualStyleBackColor = true;
         BtnApply.Click += BtnApply_Click;
         // 
@@ -261,7 +261,7 @@ partial class MainWindow
         GrpContent.Size = new Size(358, 263);
         GrpContent.TabIndex = 10;
         GrpContent.TabStop = false;
-        GrpContent.Text = "Gift Content";
+        GrpContent.Text = "礼物内容";
         // 
         // LblInfo7
         // 
@@ -270,7 +270,7 @@ partial class MainWindow
         LblInfo7.Name = "LblInfo7";
         LblInfo7.Size = new Size(49, 20);
         LblInfo7.TabIndex = 6;
-        LblInfo7.Text = "Info_7";
+        LblInfo7.Text = "信息_7";
         LblInfo7.Visible = false;
         LblInfo7.SizeChanged += LblInfo_SizeChanged;
         // 
@@ -281,7 +281,7 @@ partial class MainWindow
         LblInfo6.Name = "LblInfo6";
         LblInfo6.Size = new Size(49, 20);
         LblInfo6.TabIndex = 5;
-        LblInfo6.Text = "Info_6";
+        LblInfo6.Text = "信息_6";
         LblInfo6.Visible = false;
         LblInfo6.SizeChanged += LblInfo_SizeChanged;
         // 
@@ -292,7 +292,7 @@ partial class MainWindow
         LblInfo5.Name = "LblInfo5";
         LblInfo5.Size = new Size(49, 20);
         LblInfo5.TabIndex = 4;
-        LblInfo5.Text = "Info_5";
+        LblInfo5.Text = "信息_5";
         LblInfo5.Visible = false;
         LblInfo5.SizeChanged += LblInfo_SizeChanged;
         // 
@@ -303,7 +303,7 @@ partial class MainWindow
         LblInfo4.Name = "LblInfo4";
         LblInfo4.Size = new Size(49, 20);
         LblInfo4.TabIndex = 3;
-        LblInfo4.Text = "Info_4";
+        LblInfo4.Text = "信息_4";
         LblInfo4.Visible = false;
         LblInfo4.SizeChanged += LblInfo_SizeChanged;
         // 
@@ -314,7 +314,7 @@ partial class MainWindow
         LblInfo3.Name = "LblInfo3";
         LblInfo3.Size = new Size(49, 20);
         LblInfo3.TabIndex = 2;
-        LblInfo3.Text = "Info_3";
+        LblInfo3.Text = "信息_3";
         LblInfo3.Visible = false;
         LblInfo3.SizeChanged += LblInfo_SizeChanged;
         // 
@@ -325,7 +325,7 @@ partial class MainWindow
         LblInfo2.Name = "LblInfo2";
         LblInfo2.Size = new Size(49, 20);
         LblInfo2.TabIndex = 1;
-        LblInfo2.Text = "Info_2";
+        LblInfo2.Text = "信息_2";
         LblInfo2.Visible = false;
         LblInfo2.SizeChanged += LblInfo_SizeChanged;
         // 
@@ -336,7 +336,7 @@ partial class MainWindow
         LblInfo1.Name = "LblInfo1";
         LblInfo1.Size = new Size(49, 20);
         LblInfo1.TabIndex = 0;
-        LblInfo1.Text = "Info_1";
+        LblInfo1.Text = "信息_1";
         LblInfo1.Visible = false;
         LblInfo1.SizeChanged += LblInfo_SizeChanged;
         // 
@@ -367,20 +367,20 @@ partial class MainWindow
         ContextMenuStripWC.Items.AddRange(new ToolStripItem[] { BtnRemove, BtnRemoveAll });
         ContextMenuStripWC.Name = "ConextMenuStripWC";
         ContextMenuStripWC.Size = new Size(155, 52);
-        ContextMenuStripWC.Text = "Remove";
+        ContextMenuStripWC.Text = "删除";
         // 
         // BtnRemove
         // 
         BtnRemove.Name = "BtnRemove";
         BtnRemove.Size = new Size(154, 24);
-        BtnRemove.Text = "Remove";
+        BtnRemove.Text = "删除";
         BtnRemove.Click += BtnRemove_Click;
         // 
         // BtnRemoveAll
         // 
         BtnRemoveAll.Name = "BtnRemoveAll";
         BtnRemoveAll.Size = new Size(154, 24);
-        BtnRemoveAll.Text = "Remove All";
+        BtnRemoveAll.Text = "全部删除";
         BtnRemoveAll.Click += BtnRemoveAll_Click;
         // 
         // OpenFileDialogWC
@@ -413,13 +413,13 @@ partial class MainWindow
         ToolsToolStripMenu.DropDownItems.AddRange(new ToolStripItem[] { MenuItemMGDB });
         ToolsToolStripMenu.Name = "ToolsToolStripMenu";
         ToolsToolStripMenu.Size = new Size(58, 24);
-        ToolsToolStripMenu.Text = "Tools";
+        ToolsToolStripMenu.Text = "工具";
         // 
         // MenuItemMGDB
         // 
         MenuItemMGDB.Name = "MenuItemMGDB";
         MenuItemMGDB.Size = new Size(351, 26);
-        MenuItemMGDB.Text = "Download latest Mystery Gift Database";
+        MenuItemMGDB.Text = "下载最新的神秘礼物数据库";
         MenuItemMGDB.Click += MenuItemMGDB_Click;
         // 
         // toolTipRedemptionMethod
@@ -450,7 +450,7 @@ partial class MainWindow
         MaximizeBox = false;
         MinimizeBox = false;
         Name = "MainWindow";
-        Text = "Switch Gift Data Manager v";
+        Text = "Switch神秘礼物数据管理器 v";
         DragDrop += FileDragDrop;
         DragEnter += FileDragEnter;
         GrpBCAT.ResumeLayout(false);
