@@ -54,20 +54,19 @@ public partial class MgdbForm : Form
                         if (totalBytes > 0)
                         {
                             double progressPercentage = (double)totalRead / totalBytes * 100;
-                            // Update UI or log progress here
                             lblMessage.Text = $"已下载{progressPercentage:F2}%, 请稍候...";
                         }
                     }
                 }
             }
 
-            lblMessage.Text = $"Extracting files...";
+            lblMessage.Text = $"正在解压文件...";
             ZipFile.ExtractToDirectory(zipPath, path);
             File.Delete(zipPath);
 
             var tmpMgbdPath = Path.Combine(path, "EventsGallery-master");
 
-            lblMessage.Text = $"Cleaning up residual files...";
+            lblMessage.Text = $"正在清理残留文件...";
             File.Delete(Path.Combine(tmpMgbdPath, ".gitignore"));
             Directory.Delete(Path.Combine(tmpMgbdPath, "Extras"), true);
             Directory.Delete(Path.Combine(tmpMgbdPath, "Unreleased"), true);
